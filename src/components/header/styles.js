@@ -7,5 +7,7 @@ export const Header = styled.div`
 `;
 
 export const Text = styled.p`
-  color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
 `;

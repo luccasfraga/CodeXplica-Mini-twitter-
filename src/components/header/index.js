@@ -5,7 +5,7 @@ import React from 'react';
 
 const Navbar = ({ background }) => (
   <Header background={background}>
-    <Text>Oieee</Text>
+    <Text>VC CODA</Text>
   </Header>
 );
 
