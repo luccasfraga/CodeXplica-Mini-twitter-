@@ -6,10 +6,10 @@ import React from 'react';
 
 const Home = () => (
   <>
-  <Header background="blue" />
+  <Header />
   <h1>oie</h1>
-  <Button></Button>
-  </>
+  <Button link='/step01' />
+   </>
 );
 
 export default Home;
