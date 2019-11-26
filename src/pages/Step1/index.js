@@ -64,7 +64,6 @@ const Step1 = props => {
             <Subtitle text="Home" margin="8px 20px" align="left;" />
           </Result>
 
-          <Button onClick={handleClick} text="Avançar" />
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />
         </Content>
       </Container>
