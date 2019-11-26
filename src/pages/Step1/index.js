@@ -5,9 +5,9 @@ import Header from '../../components/header';
 import React from 'react';
 import CodeEditor from '../../components/codeEditor';
 
-const Step1 = () => (
+const Step1 = (props) => (
   <>
-    <Header />
+    <Header {...props} />
     <Container>
       <CardInfo background="#f9f9f9" text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component" />
 
