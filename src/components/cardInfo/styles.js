@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const CardInfo = styled.div`
   display: flex;
   background-color: ${props => props.background};
-  height: 50px;
-  width:100vh
+  height: 100vh;
+  width:150px;
 `;
 
 export const Text = styled.p`

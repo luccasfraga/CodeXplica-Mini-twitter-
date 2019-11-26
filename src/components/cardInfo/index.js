@@ -1,20 +1,21 @@
-import { Header, Text } from './styles';
-
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Text, CardInfo } from './styles';
 
-const CardInfo = ({ background }) => (
-  <Header background={background}>
-    <Text>Oieee</Text>
-  </Header>
+const CardInfoComponent = ({ text, background }) => (
+  <CardInfo background={background}>
+    <Text>{text}</Text>
+  </CardInfo>
 );
 
-CardInfo.propTypes = {
+CardInfoComponent.propTypes = {
+  text: PropTypes.string.isRequired,
   background: PropTypes.string,
 };
 
-CardInfo.defaultProps = {
-  background: '#ecec',
+CardInfoComponent.defaultProps = {
+  text: 'CODE INIT',
+  background: 'green',
 };
 
-export default CardInfo;
+export default CardInfoComponent;
