@@ -19,4 +19,5 @@ export const Text = styled.p`
   color: white;
   font-weight: bold;
   font-size: 2em;
+  cursor: pointer;
 `;

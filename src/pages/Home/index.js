@@ -11,7 +11,7 @@ const Home = (props) => {
 
   return (
     <>
-      <Header />
+      <Header {...props} />
       <h1>oie</h1>
       <Button onClick={handleClick} />
     </>
