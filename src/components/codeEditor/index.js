@@ -1,27 +1,25 @@
-import React from 'react';
-import Editor from 'react-simple-code-editor';
-import Highlight from 'react-highlight'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import AceEditor from 'react-ace';
 
-const code = `function add(a, b) {
-  return a + b;
-}
-`;
+import "ace-builds/src-noconflict/mode-html";
+import "ace-builds/src-noconflict/mode-css";
+import "ace-builds/src-noconflict/mode-javascript";
+import "ace-builds/src-noconflict/theme-tomorrow";
+const CodeEditor = ({mode}) => (
+  <AceEditor
+    placeholder="Code aqui!"
+    mode={mode}
+    theme="tomorrow"
+    fontSize={14}
+    showPrintMargin={true}
+    showGutter={true}
+    highlightActiveLine={true}
+  />
+ );
 
-class App extends React.Component {
-  state = { code };
+CodeEditor.prototypes = {
+  mode: PropTypes.string.isRequired
+};
 
-  render() {
-    return (
-      <Editor
-        value={this.state.code}
-        onValueChange={code => this.setState({ code })}
-        highlight={code => highlight(code, languages.js)}
-        padding={10}
-        style={{
-          fontFamily: '"Fira code", "Fira Mono", monospace',
-          fontSize: 12,
-        }}
-      />
-    );
-  }
-}
+export default CodeEditor;

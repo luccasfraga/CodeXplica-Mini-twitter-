@@ -1,8 +1,9 @@
 import { Container, Content } from './styles';
 
-import CardInfo from '../../components/cardInfo'
+import CardInfo from '../../components/cardInfo';
 import Header from '../../components/header';
 import React from 'react';
+import CodeEditor from '../../components/codeEditor';
 
 const Step1 = () => (
   <>
@@ -11,7 +12,7 @@ const Step1 = () => (
       <CardInfo />
 
       <Content background="#c1c1c1">
-        Conteudo centro
+        <CodeEditor mode='html' />
       </Content>
     </Container>
   </>
