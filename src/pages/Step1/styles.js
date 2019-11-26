@@ -15,4 +15,17 @@ export const Content = styled.div`
   text-align: left;
   line-height: 1.4;
   font-size: 15px;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+    flex-direction: row;
+  }
+`;
+
+export const Result = styled.div`
+  width: 100%;
+  box-shadow: 0px 1px 3px 0px #c1c1c1;
+  padding: 30px;
+  margin: 30px 0;
 `;
