@@ -1,6 +1,7 @@
 import Button from '../../components/button'
 import Header from '../../components/header'
 import React from 'react';
+import Title from '../../components/title'
 
 // import { Container } from './styles';
 
@@ -12,7 +13,7 @@ const Home = (props) => {
   return (
     <>
       <Header {...props} />
-      <h1>oie</h1>
+      <Title text="passar aquiiii" />
       <Button onClick={handleClick} />
     </>
   )

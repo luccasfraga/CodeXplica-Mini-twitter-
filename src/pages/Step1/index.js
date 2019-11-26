@@ -1,9 +1,9 @@
 import { Container, Content } from './styles';
 
 import CardInfo from '../../components/cardInfo';
+import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
 import React from 'react';
-import CodeEditor from '../../components/codeEditor';
 
 const Step1 = (props) => (
   <>
