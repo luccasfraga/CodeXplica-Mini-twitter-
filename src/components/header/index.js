@@ -1,7 +1,11 @@
+import { Header, Text } from './styles';
+
 import React from 'react';
 
-// import { Container } from './styles';
+const Navbar = () => (
+  <Header>
+    <Text>Oieee</Text>
+  </Header>
+);
 
-const Header = () => <h1>Header</h1>;
-
-export default Header;
+export default Navbar;
