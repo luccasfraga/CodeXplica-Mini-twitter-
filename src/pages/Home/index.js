@@ -1,6 +1,7 @@
 import Button from '../../components/button'
 import Header from '../../components/header'
 import React from 'react';
+import SubTitle from '../../components/title'
 import Title from '../../components/title'
 
 // import { Container } from './styles';
@@ -13,7 +14,8 @@ const Home = (props) => {
   return (
     <>
       <Header {...props} />
-      <Title text="passar aquiiii" />
+      <Title text="Você já pensou em programar?" />
+      <SubTitle text="Crie seu próprio Twitter e veja que você também pode desenvolver uma aplicação" />
       <Button onClick={handleClick} />
     </>
   )
