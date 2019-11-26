@@ -15,7 +15,7 @@ const Navbar = props => {
 };
 
 Navbar.propTypes = {
-  history: PropTypes.string.isRequired,
+  history: PropTypes.object.isRequired,
 };
 
 export default Navbar;

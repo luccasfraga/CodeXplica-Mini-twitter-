@@ -33,7 +33,7 @@ const Home = props => {
 };
 
 Home.propTypes = {
-  history: PropTypes.string.isRequired,
+  history: PropTypes.object.isRequired,
 };
 
 export default Home;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const BoxButton = styled.a`
+export const BoxButton = styled.button`
   display: flex;
   margin: ${props => props.margin};
   background: rgba(63, 191, 191, 1);
@@ -98,6 +98,11 @@ export const BoxButton = styled.a`
       rgba(44, 242, 232, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3f0f0', endColorstr='#2cf2e8', GradientType=1 );
+  }
+
+  &:disabled,
+  &.disabled {
+    background: #c1c1c1;
   }
 `;
 
