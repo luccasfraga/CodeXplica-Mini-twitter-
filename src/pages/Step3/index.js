@@ -6,6 +6,7 @@ import CardInfo from '../../components/cardInfo';
 import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
 import Subtitle from '../../components/subtitle';
+import Message from '../../text-steps.json';
 
 const Step3 = props => {
   function handleClick() {
@@ -16,11 +17,7 @@ const Step3 = props => {
     <>
       <Header {...props} />
       <Container>
-        <CardInfo
-          width="50%"
-          background="#f9f9f9"
-          text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component"
-        />
+        <CardInfo width="50%" background="#f9f9f9" text={Message.step03} />
 
         <Content>
           <Subtitle
