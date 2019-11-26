@@ -9,7 +9,7 @@ const Step1 = () => (
   <>
     <Header />
     <Container>
-      <CardInfo />
+      <CardInfo background="#f9f9f9" text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component" />
 
       <Content background="#c1c1c1">
         <CodeEditor mode='html' />

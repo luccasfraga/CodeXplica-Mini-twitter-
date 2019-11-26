@@ -46,7 +46,7 @@ export const BoxButton = styled.a`
 `;
 
 export const Text = styled.p`
-  color: black;
+  color: #ffffff;
   margin: 0 auto;
   font-weight: bold;
 
