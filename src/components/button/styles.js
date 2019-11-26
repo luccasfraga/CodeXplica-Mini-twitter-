@@ -38,12 +38,12 @@ export const BoxButton = styled.a`
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fbfbf', endColorstr='#3fbee1', GradientType=1 );
   border: ${props => props.border};
   border-radius: ${props => props.borderRadius};
-  padding: 16px;
+  padding: ${props => props.padding};
   width: ${props => props.width};
   cursor: pointer;
   z-index: 1;
   position: relative;
-  font-size: inherit;
+  font-size: ${props => props.size};
   font-family: inherit;
   color: white;
   outline: none;
@@ -64,7 +64,7 @@ export const BoxButton = styled.a`
 
   &:hover::after {
     transition: transform 0.6s ease-in-out;
-    transform: translate3d(1000%, 0, 0) rotate(35deg);
+    transform: translate3d(1500%, 0, 0) rotate(35deg);
     background: rgba(163, 240, 240, 1);
     background: -moz-linear-gradient(
       left,

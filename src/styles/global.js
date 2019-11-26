@@ -20,6 +20,7 @@ export default createGlobalStyle`
     background: #fff;
     margin: 0;
     -webkit-font-smoothing: antialiased !important;
+    overflow: hidden;
   }
 
   .container {

@@ -7,20 +7,28 @@ import 'ace-builds/src-noconflict/mode-css';
 import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-tomorrow';
 
-const CodeEditor = ({ mode }) => (
+const CodeEditor = ({ mode, readOnly, value }) => (
   <AceEditor
-    placeholder="Code aqui!"
+    placeholder={!readOnly ? 'Copie o codigo ao lado.' : false}
     mode={mode}
     theme="tomorrow"
-    fontSize={14}
     showPrintMargin
     showGutter
     highlightActiveLine
+    readOnly={readOnly}
+    value={value}
+    fontSize={18}
+    height="300px"
   />
 );
 
-CodeEditor.prototypes = {
+CodeEditor.propTypes = {
   mode: PropTypes.string.isRequired,
+  readOnly: PropTypes.bool,
+};
+
+CodeEditor.defaultProps = {
+  readOnly: false,
 };
 
 export default CodeEditor;
