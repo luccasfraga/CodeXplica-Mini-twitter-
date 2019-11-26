@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Content, Result } from './styles';
 
 import Button from '../../components/button';
@@ -6,10 +7,11 @@ import CardInfo from '../../components/cardInfo';
 import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
 import Subtitle from '../../components/subtitle';
+import imageTwitter from '../../images/twitter.png';
 
 const Step1 = props => {
   function handleClick() {
-    props.history.push('/step01');
+    props.history.push('/step02');
   }
 
   return (
@@ -33,13 +35,33 @@ const Step1 = props => {
             <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
           </div>
 
-          <Result>Resultado do code aqui....</Result>
+          <Subtitle
+            text="Resultado do código abaixo:"
+            margin="30px 0 30px"
+            align="left;"
+          />
 
-          <Button onClick={handleClick} text="Comparar" />
+          <Result>
+            <div>
+              <img
+                width="30px"
+                height="30px"
+                src={imageTwitter}
+                alt="logo do Twitter"
+              />
+            </div>
+            <Subtitle text="Home" margin="8px 20px" align="left;" />
+          </Result>
+
+          <Button onClick={handleClick} text="Avançar" />
         </Content>
       </Container>
     </>
   );
+};
+
+Step1.propTypes = {
+  history: PropTypes.string.isRequired,
 };
 
 export default Step1;

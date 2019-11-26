@@ -1,7 +1,7 @@
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
-import React from 'react';
 import Step1 from './pages/Step1';
 import Step2 from './pages/Step2';
 
