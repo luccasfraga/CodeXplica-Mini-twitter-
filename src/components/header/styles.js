@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
   display: flex;
-  background-color: red;
+  background-color: ${props => props.background};
   height: 50px;
 `;
 
