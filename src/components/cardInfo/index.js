@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Text, CardInfo } from './styles';
 
-const CardInfoComponent = ({ text, background }) => (
-  <CardInfo background={background}>
+const CardInfoComponent = ({ text, background, width }) => (
+  <CardInfo background={background} width={width}>
     <Text>{text}</Text>
   </CardInfo>
 );
@@ -11,11 +11,13 @@ const CardInfoComponent = ({ text, background }) => (
 CardInfoComponent.propTypes = {
   text: PropTypes.string.isRequired,
   background: PropTypes.string,
+  width: PropTypes.string,
 };
 
 CardInfoComponent.defaultProps = {
   text: 'CODE INIT',
-  background: 'green',
+  background: '#dcdcdc',
+  width: '400px',
 };
 
 export default CardInfoComponent;
