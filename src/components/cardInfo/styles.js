@@ -4,7 +4,7 @@ export const CardInfo = styled.div`
   display: flex;
   background-color: ${props => props.background};
   height: 100vh;
-  width:150px;
+  width:400px;
 `;
 
 export const Text = styled.p`
