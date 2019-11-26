@@ -9,9 +9,9 @@ const Step1 = (props) => (
   <>
     <Header {...props} />
     <Container>
-      <CardInfo background="#f9f9f9" text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component" />
+      <CardInfo width="50%" background="#f9f9f9" text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component" />
 
-      <Content background="#c1c1c1">
+      <Content>
         <CodeEditor mode='html' />
       </Content>
     </Container>
