@@ -5,7 +5,7 @@ import React from 'react';
 
 const Home = () => (
   <>
-    <Header background="blue" />
+    <Header/>
     <h1>oie</h1>
   </>
 );
