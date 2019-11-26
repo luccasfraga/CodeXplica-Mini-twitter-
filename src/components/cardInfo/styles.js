@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-export const Header = styled.div`
+export const CardInfo = styled.div`
   display: flex;
   background-color: ${props => props.background};
   height: 50px;
+  width:100vh;
 `;
 
 export const Text = styled.p`
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
+  color: #d1d1;
 `;
