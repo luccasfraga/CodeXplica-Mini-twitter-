@@ -1,0 +1,8 @@
+{
+  "step01": "Vamos começar definindo o espaço onde vamos twittar. E vamos aproveitar e criar também um cabeçalho para mostrar onde vamos twittar. Para isso vamos utilizar HTML que é uma das linguagens que podemos utilizar pra criar websites.",
+  "step02": "Acho que está faltando estilo para esse cabeçalho!!! Que tal deixarmos ele mais bonito utilizando CSS. CSS é uma linguagem que pode criar estilos para cada componente da nossa aplicação.",
+  "step03": "Agora é hora de criarmos a área onde vamos digitar nossos tweets. Para isso vamos usar um componente do HTML chamado Text-Area.",
+  "step04": "Que tal agora criarmos o botão que envia o tweet? Vamos entrar agora em uma Linguagem de Programação chamada Javascript. O Javascript nos deixa criar mecanismos dinâmicos em nossas páginas, assim podemos interagir com os componentes HTML que criamos anterioirmente. Agora vamos fazer nosso tweet ficar armazenado na nuvem!",
+  "step05": "Lembra do CSS? Vamos usar ele novamente para deixar a lista dos tweets mais bonita. ",
+  "step06": "Olha que legal, você acabou de construir seu próprio tweeter. Você passou por vários passos, tudo que você construiu usando HTML e CSS chamamos de camada de aplicação e o que foi criado com o JavaScript chamamos de camada de controle. Agora você sabe que uma aplicação pode ser construída utilizando diferentes linguagens de programação e é dividida em diferentes camadas"
+}
