@@ -5,5 +5,5 @@ export const SubtitleStyles = styled.h3`
   font-size: ${props => props.size};
   margin: ${props => props.margin};
   font-weight: bold;
-  text-align: center;
+  text-align: ${props => props.align};
 `;
