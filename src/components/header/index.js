@@ -7,7 +7,7 @@ const Navbar = ({ background }) => (
   <Header background={background}>
     <Text>VC CODA</Text>
   </Header>
-);
+  );
 
 Navbar.propTypes = {
   background: PropTypes.string,

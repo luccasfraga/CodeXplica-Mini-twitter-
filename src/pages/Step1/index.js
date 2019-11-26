@@ -10,7 +10,7 @@ const Step1 = () => (
     <Container>
       <CardInfo />
 
-      <Content background="#c1c1c1">
+      <Content>
         Conteudo centro
       </Content>
     </Container>
