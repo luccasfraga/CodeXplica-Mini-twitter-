@@ -11,6 +11,7 @@ const Button = ({
   text,
   padding,
   size,
+  disabled,
 }) => (
   <BoxButton
     onClick={() => onClick()}
@@ -20,6 +21,7 @@ const Button = ({
     width={width}
     padding={padding}
     size={size}
+    disabled={disabled}
   >
     <Text>{text}</Text>
   </BoxButton>
@@ -34,6 +36,7 @@ Button.propTypes = {
   padding: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   size: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -44,6 +47,7 @@ Button.defaultProps = {
   text: 'Começar',
   padding: '16px',
   size: '16px',
+  disabled: false,
 };
 
 export default Button;
