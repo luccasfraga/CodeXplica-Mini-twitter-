@@ -15,7 +15,6 @@ CardInfoComponent.propTypes = {
 };
 
 CardInfoComponent.defaultProps = {
-  text: 'CODE INIT',
   background: '#dcdcdc',
   width: '400px',
 };

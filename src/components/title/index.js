@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import React from 'react'
+import React from 'react';
 import { TitleStyles } from './styles';
 
-const Title = (props) => (
-  <TitleStyles color={props.color}margin={props.margin}>
-    {props.text}
+const Title = ({ color, margin, text }) => (
+  <TitleStyles color={color} margin={margin}>
+    {text}
   </TitleStyles>
 );
 

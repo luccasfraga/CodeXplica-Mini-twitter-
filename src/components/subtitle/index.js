@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import React from 'react'
+import React from 'react';
 import { SubtitleStyles } from './styles';
 
-const SubTitle = (props) => (
-  <SubtitleStyles color={props.color} margin={props.margin}>
-    {props.text}
+const SubTitle = ({ color, margin, text }) => (
+  <SubtitleStyles color={color} margin={margin}>
+    {text}
   </SubtitleStyles>
 );
 

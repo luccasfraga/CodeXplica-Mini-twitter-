@@ -5,7 +5,7 @@ export const CardInfo = styled.div`
   background-color: ${props => props.background};
   height: 100vh;
   /* width:400px; */
-  width:${props => props.width};
+  width: ${props => props.width};
   justify-content: center;
   padding: 40px;
   box-shadow: 3px 3px 3px #ececec;

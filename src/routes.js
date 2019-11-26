@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './pages/Home';
 import React from 'react';
+import Home from './pages/Home';
 import Step1 from './pages/Step1';
 
 export default function Routes() {
