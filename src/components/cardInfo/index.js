@@ -1,12 +1,11 @@
-import { Header, Text } from './styles';
-
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Text } from './styles';
 
 const CardInfo = ({ background }) => (
-  <Header background={background}>
+  <div>
     <Text>Oieee</Text>
-  </Header>
+  </div>
 );
 
 CardInfo.propTypes = {
