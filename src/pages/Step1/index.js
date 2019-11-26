@@ -8,7 +8,7 @@ const Step1 = () => (
   <>
     <Header />
     <Container>
-      <CardInfo text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component" />
+      <CardInfo background="#f9f9f9" text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component" />
 
       <Content>
         Conteudo centro

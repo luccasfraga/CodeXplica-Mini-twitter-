@@ -8,9 +8,12 @@ export const CardInfo = styled.div`
   width:${props => props.width};
   justify-content: center;
   padding: 40px;
+  box-shadow: 3px 3px 3px #ececec;
 `;
 
 export const Text = styled.p`
-  color: '#d1d1';
-  margin: '0 auto'
+  color: #909090;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 15px;
 `;
