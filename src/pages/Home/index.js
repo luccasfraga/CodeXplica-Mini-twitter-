@@ -1,13 +1,21 @@
-import Header from '../../components/header';
+import Button from '../../components/button'
+import Header from '../../components/header'
 import React from 'react';
 
 // import { Container } from './styles';
 
-const Home = () => (
-  <>
-    <Header background="blue" />
-    <h1>oie</h1>
-  </>
-);
+const Home = (props) => {
+  function handleClick() {
+    props.history.push('/step01');
+  };
+
+  return (
+    <>
+      <Header />
+      <h1>oie</h1>
+      <Button onClick={handleClick} />
+    </>
+  )
+};
 
 export default Home;
