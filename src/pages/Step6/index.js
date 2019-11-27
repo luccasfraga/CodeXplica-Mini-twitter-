@@ -39,11 +39,6 @@ const Step6 = props => {
 width: 100%;
 display:flex;
 flex-direction: column;
-}
-
-b {
-display: block;
-margin-bottom: 20px;
 }"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
@@ -57,11 +52,6 @@ margin-bottom: 20px;
 width: 100%;
 display:flex;
 flex-direction: column;
-}
-
-b {
-display: block;
-margin-bottom: 20px;
 }"
             />
           </div>

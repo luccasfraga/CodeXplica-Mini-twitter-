@@ -2,9 +2,9 @@
 
 Esse projeto tem objetivo de ensinar os primeiros passos com código, principalmente para alunos do ensino médio que ainda não tiveram nenhum contato com a programação. Através desse projeto eles aprenderão algumas coisas básicas para começar a ter o gostinho do que é desenvolver sua própria e primeira aplicação web.
 
-Participantes: @flpgst (Felipe Gonçalves), @patrickgmailhub (Patrick Guedes), @luccasxds (Luccas Fraga) e @jumaschion (Júlia Maschion)
+Participantes: @flpgst (Filipe Gonçalves), @patrickgmailhub (Patrick Guedes), @luccasxds (Luccas Fraga) e @jumaschion (Júlia Maschion)
 
-![](src/images/projeto.png)
+![](src/images/codeXplica.png)
 
 
 ### Url do projeto
