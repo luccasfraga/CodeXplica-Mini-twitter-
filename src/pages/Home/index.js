@@ -19,7 +19,10 @@ const Home = props => {
       <Content>
         <div>
           <Title text="Você já pensou em <span>começar<br /> a programar?</span>" />
-          <SubTitle text="Crie seu próprio Twitter e veja que você também pode desenvolver uma aplicação" />
+          <SubTitle
+            size="24px"
+            text="Em poucos passos você pode mostrar para seus amigos que você criou uma aplicação web! 😱"
+          />
         </div>
         <Button
           width="250px"
