@@ -14,10 +14,11 @@ export const CardInfo = styled.p`
   text-justify: inter-character;
   line-height: 1.6;
   font-size: 15px;
+  flex-direction: inherit;
 
   p {
     text-align: justify;
     text-justify: inter-character;
     line-height: 2;
-}
+  }
 `;
