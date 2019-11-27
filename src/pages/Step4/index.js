@@ -30,6 +30,7 @@ const Step4 = props => {
             text="Copie o codigo ao lado para você ir para o próximo nível."
             margin="0 0 30px"
             align="left;"
+            color="#333"
           />
           <div>
             <CodeEditor
@@ -91,6 +92,7 @@ padding: 30px;
             text="Resultado do código abaixo:"
             margin="30px 0 30px"
             align="left;"
+            color="#333"
           />
 
           <Result>
