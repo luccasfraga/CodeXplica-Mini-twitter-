@@ -16,13 +16,10 @@ const NotFound = props => {
       <Header {...props} />
       <Content>
         <div>
-          <Title text="Oopa! Acho que você se perdeu por aqui." />
+          <Title text="Oopa! Acho que você <span>se perdeu <br /> por aqui.</span>" />
         </div>
         <div>
-          <SubTitle
-            size="20px"
-            text="Mas eu vou te dar um ajuda, clique no botão abaixo que eu te levo de volta à página inicial."
-          />
+          <SubTitle text="Mas eu vou te dar um ajuda, clique no botão abaixo que eu te levo de volta à página inicial." />
         </div>
         <Button
           width="250px"

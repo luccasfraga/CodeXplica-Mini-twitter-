@@ -23,7 +23,7 @@ const Step1 = props => {
     <>
       <Header {...props} />
       <Container>
-        <CardInfo width="50%" background="#f9f9f9" text={Message.step01} />
+        <CardInfo width="600px" background="#f9f9f9" text={Message.step01} />
 
         <Content>
           <Subtitle
@@ -36,7 +36,7 @@ const Step1 = props => {
             <CodeEditor
               mode="html"
               compareValue={`<div>
-  <img src='aaa' alt='Logo' />
+  <img src='twitter.png' alt='Logo' />
 </div>`}
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
@@ -47,7 +47,7 @@ const Step1 = props => {
               mode="html"
               readOnly
               value={`<div>
-  <img src='aaa' alt='Logo' />
+  <img src='twitter.png' alt='Logo' />
 </div>`}
             />
           </div>
@@ -68,12 +68,6 @@ const Step1 = props => {
                 alt="logo do Twitter"
               />
             </div>
-            <Subtitle
-              text="Home"
-              margin="8px 20px"
-              align="left;"
-              color="#333"
-            />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />

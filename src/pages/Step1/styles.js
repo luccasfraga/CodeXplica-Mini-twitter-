@@ -11,7 +11,6 @@ export const Content = styled.div`
   background-color: ${props => props.background};
   height: 100vh;
   padding: 50px;
-
   color: #211f1f;
   text-align: left;
   line-height: 1.4;
