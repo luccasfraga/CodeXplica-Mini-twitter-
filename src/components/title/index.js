@@ -3,9 +3,12 @@ import React from 'react';
 import { TitleStyles } from './styles';
 
 const Title = ({ color, margin, text, size }) => (
-  <TitleStyles color={color} margin={margin} size={size}>
-    {text}
-  </TitleStyles>
+  <TitleStyles
+    color={color}
+    margin={margin}
+    size={size}
+    dangerouslySetInnerHTML={{ __html: text }}
+  />
 );
 
 Title.propTypes = {
@@ -16,9 +19,9 @@ Title.propTypes = {
 };
 
 Title.defaultProps = {
-  color: '#ffc801',
+  color: '#fff',
   margin: '0 0 20px',
-  size: '51px',
+  size: '60px',
 };
 
 export default Title;

@@ -33,6 +33,7 @@ const Step1 = props => {
             text="Copie o codigo ao lado para você ir para o próximo nível."
             margin="0 0 30px"
             align="left;"
+            color="#333"
           />
           <div>
             <CodeEditor
@@ -43,13 +44,20 @@ const Step1 = props => {
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
+            <CodeEditor
+              mode="html"
+              readOnly
+              value={`<div>
+<img src='aaa' alt='Logo' />
+</div>`}
+            />
           </div>
 
           <Subtitle
             text="Resultado do código abaixo:"
             margin="30px 0 30px"
             align="left;"
+            color="#333"
           />
 
           <Result>
@@ -61,7 +69,12 @@ const Step1 = props => {
                 alt="logo do Twitter"
               />
             </div>
-            <Subtitle text="Home" margin="8px 20px" align="left;" />
+            <Subtitle
+              text="Home"
+              margin="8px 20px"
+              align="left;"
+              color="#333"
+            />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />

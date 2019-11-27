@@ -41,10 +41,10 @@ Button.propTypes = {
 
 Button.defaultProps = {
   margin: '0 auto',
-  borderRadius: '6px',
+  borderRadius: '60px',
   border: '1px solid #3FBFBF',
   width: '200px',
-  text: 'Começar',
+  text: 'Comece agora',
   padding: '16px',
   size: '16px',
   disabled: false,

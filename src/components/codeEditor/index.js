@@ -5,6 +5,7 @@ import React from 'react';
 import 'ace-builds/src-noconflict/mode-html';
 import 'ace-builds/src-noconflict/mode-css';
 import 'ace-builds/src-noconflict/mode-javascript';
+import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/theme-tomorrow';
 
 const CodeEditor = ({
@@ -29,7 +30,7 @@ const CodeEditor = ({
     <AceEditor
       placeholder={!readOnly ? 'Copie o codigo ao lado.' : ''}
       mode={mode}
-      theme="tomorrow"
+      theme={!readOnly ? 'tomorrow' : 'monokai'}
       showPrintMargin
       showGutter
       highlightActiveLine
@@ -38,6 +39,7 @@ const CodeEditor = ({
       fontSize={18}
       height="300px"
       onChange={handleChange}
+      tabSize={0}
     />
   );
 };
