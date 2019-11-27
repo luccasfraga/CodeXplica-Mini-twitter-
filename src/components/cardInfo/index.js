@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Text, CardInfo } from './styles';
+import { CardInfo } from './styles';
 
 const CardInfoComponent = ({ text, background, width }) => (
-  <CardInfo background={background} width={width}>
-    <Text>{text}</Text>
-  </CardInfo>
+  <CardInfo
+    background={background}
+    width={width}
+    dangerouslySetInnerHTML={{ __html: text }}
+  />
 );
 
 CardInfoComponent.propTypes = {

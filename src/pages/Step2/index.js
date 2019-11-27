@@ -7,6 +7,7 @@ import Button from '../../components/button';
 import CardInfo from '../../components/cardInfo';
 import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
+import Message from '../../text-steps.json';
 import Subtitle from '../../components/subtitle';
 import imageTwitter from '../../images/twitter.png';
 
@@ -22,11 +23,7 @@ const Step2 = props => {
     <>
       <Header {...props} />
       <Container>
-        <CardInfo
-          width="50%"
-          background="#f9f9f9"
-          text="Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component Teste Component"
-        />
+        <CardInfo width="50%" background="#f9f9f9" text={Message.step02} />
 
         <Content>
           <Subtitle

@@ -23,11 +23,7 @@ const Step5 = props => {
     <>
       <Header {...props} />
       <Container>
-        <CardInfo
-          width="50%"
-          background="#f9f9f9"
-          text={Message.step05}
-        />
+        <CardInfo width="50%" background="#f9f9f9" text={Message.step05} />
 
         <Content>
           <Subtitle
