@@ -7,7 +7,7 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   display: flex;
-  width: 100%;
+  width: 70%;
   background-color: ${props => props.background};
   padding: 50px;
 
