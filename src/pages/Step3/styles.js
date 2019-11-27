@@ -9,7 +9,6 @@ export const Content = styled.div`
   display: flex;
   width: 100%;
   background-color: ${props => props.background};
-  height: 100vh;
   padding: 50px;
 
   color: #211f1f;
@@ -29,4 +28,8 @@ export const Result = styled.div`
   box-shadow: 0px 1px 3px 0px #c1c1c1;
   padding: 30px;
   margin: 30px 0;
+`;
+
+export const TextAreaTwitter = styled.textarea`
+  width: 100%;
 `;
