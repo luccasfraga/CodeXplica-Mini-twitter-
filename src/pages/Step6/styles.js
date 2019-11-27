@@ -7,25 +7,10 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   display: flex;
-  width: 100%;
-  background-color: ${props => props.background};
-  padding: 50px;
-
-  color: #211f1f;
-  text-align: left;
-  line-height: 1.4;
-  font-size: 15px;
+  width: 600px;
+  border: 1px solid #c1c1c1;
+  align-items: flex-start;
+  height: 700px;
+  margin: 50px auto 0;
   flex-direction: column;
-
-  > div {
-    display: flex;
-    flex-direction: row;
-  }
-`;
-
-export const Result = styled.div`
-  width: 100%;
-  box-shadow: 0px 1px 3px 0px #c1c1c1;
-  padding: 30px;
-  margin: 30px 0;
 `;

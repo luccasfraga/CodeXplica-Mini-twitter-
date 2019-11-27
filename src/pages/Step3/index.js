@@ -34,13 +34,21 @@ const Step3 = props => {
           <div>
             <CodeEditor
               mode="html"
-              compareValue="<textarea></textarea>"
+              compareValue="<textarea
+placeholder='Twitte algo aqui!'>
+</textarea>"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<textarea></textarea>" />
+            <CodeEditor
+              mode="html"
+              readOnly
+              value="<textarea
+placeholder='Twitte algo aqui!'>
+</textarea>"
+            />
           </div>
 
           <Subtitle
@@ -59,7 +67,7 @@ const Step3 = props => {
               />
             </div>
             <Subtitle text="Home" margin="8px 20px" align="left;" />
-            <TextAreaTwitter />
+            <TextAreaTwitter placeholder="Twitte algo aqui!" />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />
