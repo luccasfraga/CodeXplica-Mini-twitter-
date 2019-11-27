@@ -19,7 +19,6 @@ export default createGlobalStyle`
   }
 
   body {
-    overflow: hidden;
     background: rgba(68,0,113,1);
 background: -moz-linear-gradient(top, rgba(68,0,113,1) 0%, rgba(144,60,208,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,0,113,1)), color-stop(100%, rgba(144,60,208,1)));
