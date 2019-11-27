@@ -34,7 +34,9 @@ const Step3 = props => {
           <div>
             <CodeEditor
               mode="html"
-              compareValue="<textarea placeholder='Twitte algo aqui!'></textarea>"
+              compareValue="<textarea
+placeholder='Twitte algo aqui!'>
+</textarea>"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
@@ -43,7 +45,9 @@ const Step3 = props => {
             <CodeEditor
               mode="html"
               readOnly
-              value="<textarea placeholder='Twitte algo aqui!'></textarea>"
+              value="<textarea
+placeholder='Twitte algo aqui!'>
+</textarea>"
             />
           </div>
 
