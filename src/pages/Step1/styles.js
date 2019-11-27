@@ -15,6 +15,10 @@ export const Content = styled.div`
   line-height: 1.4;
   font-size: 15px;
   flex-direction: column;
+  height: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 30px;
 
   > div {
     display: flex;
