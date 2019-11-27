@@ -36,7 +36,7 @@ const Step2 = props => {
               mode="css"
               compareValue="div {
                 width: 100%;
-                border: grey
+                border: 1px solid grey
                 padding: 30px;
                 };"
               handleDisabled={() => setDisabled(false)}
@@ -49,7 +49,7 @@ const Step2 = props => {
               readOnly
               value={` div {
 width: 100%;
-border: grey
+border: 1px solid grey
 padding: 30px;
 };`}
             />
