@@ -9,7 +9,7 @@ import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
 import Subtitle from '../../components/subtitle';
 import Message from '../../text-steps.json';
-import imageTwitter from '../../images/twitter.png';
+import BoxInputTw from '../../components/InputTw';
 
 const Step4 = props => {
   const [disabled, setDisabled] = useState(true);
@@ -50,15 +50,7 @@ const Step4 = props => {
           />
 
           <Result>
-            <div>
-              <img
-                width="30px"
-                height="30px"
-                src={imageTwitter}
-                alt="logo do Twitter"
-              />
-            </div>
-            <Subtitle text="Home" margin="8px 20px" align="left;" />
+            <BoxInputTw />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />

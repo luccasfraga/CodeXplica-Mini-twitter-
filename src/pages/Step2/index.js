@@ -33,14 +33,24 @@ const Step2 = props => {
           />
           <div>
             <CodeEditor
-              mode="html"
-              compareValue="<h1>oie</h1>"
+              mode="css"
+              compareValue="div { width: 100%;
+                box-shadow: 0px 1px 3px 0px #c1c1c1;
+                padding: 30px;
+                };"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
+            <CodeEditor
+              mode="css"
+              readOnly
+              value={` div { width: 100%;
+box-shadow: 0px 1px 3px 0px #c1c1c1;
+padding: 30px;
+};`}
+            />
           </div>
 
           <Subtitle
