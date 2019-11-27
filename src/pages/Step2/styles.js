@@ -7,7 +7,7 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   display: flex;
-  width: 100%;
+  width: 70%;
   background-color: ${props => props.background};
   padding: 50px;
 
@@ -16,6 +16,10 @@ export const Content = styled.div`
   line-height: 1.4;
   font-size: 15px;
   flex-direction: column;
+  height: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 30px;
 
   > div {
     display: flex;

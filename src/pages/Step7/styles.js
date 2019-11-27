@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   background-color: #fff;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 30px;
 `;
 
 export const Content = styled.div`

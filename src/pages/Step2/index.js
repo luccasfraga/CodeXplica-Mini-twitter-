@@ -23,13 +23,14 @@ const Step2 = props => {
     <>
       <Header {...props} />
       <Container>
-        <CardInfo width="50%" background="#f9f9f9" text={Message.step02} />
+        <CardInfo width="30%" background="#f9f9f9" text={Message.step02} />
 
         <Content>
           <Subtitle
             text="Copie o codigo ao lado para você ir para o próximo nível."
             margin="0 0 30px"
             align="left;"
+            color="#333"
           />
           <div>
             <CodeEditor
