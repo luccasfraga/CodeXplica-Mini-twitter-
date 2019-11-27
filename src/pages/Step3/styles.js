@@ -29,3 +29,7 @@ export const Result = styled.div`
   padding: 30px;
   margin: 30px 0;
 `;
+
+export const TextAreaTwitter = styled.textarea`
+  width: 100%;
+`;
