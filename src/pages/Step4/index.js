@@ -10,12 +10,12 @@ import Header from '../../components/header';
 import Subtitle from '../../components/subtitle';
 import imageTwitter from '../../images/twitter.png';
 
-const Step2 = props => {
+const Step4 = props => {
   const [disabled, setDisabled] = useState(true);
   const [editorValue, setEditorValue] = useState('');
 
   function handleClick() {
-    props.history.push('/step03');
+    props.history.push('/step05');
   }
 
   return (
@@ -71,8 +71,8 @@ const Step2 = props => {
   );
 };
 
-Step2.propTypes = {
+Step4.propTypes = {
   history: PropTypes.string.isRequired,
 };
 
-export default Step2;
+export default Step4;
