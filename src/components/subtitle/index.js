@@ -23,7 +23,7 @@ SubTitle.propTypes = {
 SubTitle.defaultProps = {
   color: '#fff',
   margin: '0',
-  size: '24px',
+  size: '16px',
   align: 'center',
 };
 
