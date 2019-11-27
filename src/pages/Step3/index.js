@@ -73,7 +73,7 @@ Tweetar
 
           <Result>
             <div>
-              <img style={{ width: '50px' }} src={ImgUser} />
+              <img style={{ width: '50px' }} src={ImgUser} alt="logo" />
               <textarea placeholder="Twitte algo aqui!" />
               <button placeholder="O que está acontecendo?">Tweetar</button>
             </div>

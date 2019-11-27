@@ -9,7 +9,6 @@ import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
 import Subtitle from '../../components/subtitle';
 import Message from '../../text-steps.json';
-import PostTw from '../../components/PostTw';
 
 const Step5 = props => {
   const [disabled, setDisabled] = useState(true);
