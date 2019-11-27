@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import { Container, Content, Result } from './styles';
+import { Container, Content, Result, TextAreaTwitter } from './styles';
 
 import Button from '../../components/button';
 import CardInfo from '../../components/cardInfo';
@@ -34,13 +34,13 @@ const Step3 = props => {
           <div>
             <CodeEditor
               mode="html"
-              compareValue="<h1>oie</h1>"
+              compareValue="<textarea></textarea>"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
+            <CodeEditor mode="html" readOnly value="<textarea></textarea>" />
           </div>
 
           <Subtitle
@@ -59,6 +59,7 @@ const Step3 = props => {
               />
             </div>
             <Subtitle text="Home" margin="8px 20px" align="left;" />
+            <TextAreaTwitter />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />
