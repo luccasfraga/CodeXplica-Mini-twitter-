@@ -4,7 +4,7 @@ export const CardInfo = styled.p`
   display: flex;
   flex-direction: column;
   background-color: ${props => props.background};
-  height: 100vh;
+
   width: ${props => props.width};
   justify-content: center;
   padding: 40px;
@@ -19,6 +19,5 @@ export const CardInfo = styled.p`
     text-align: justify;
     text-justify: inter-character;
     line-height: 2;
-    height: 100vh;
-  }
+}
 `;
