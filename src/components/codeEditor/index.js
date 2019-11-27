@@ -19,7 +19,11 @@ const CodeEditor = ({
 }) => {
   function handleChange(newValue) {
     onChange(newValue);
-    if (newValue === compareValue) {
+
+    const valNew = newValue.replace(/\s/g, '');
+    const valCompare = compareValue.replace(/\s/g, '');
+
+    if (valNew === valCompare) {
       handleDisabled();
     } else {
       handleEnabled();
@@ -28,7 +32,7 @@ const CodeEditor = ({
 
   return (
     <AceEditor
-      placeholder={!readOnly ? 'Copie o codigo ao lado.' : ''}
+      placeholder={!readOnly ? 'Digite aqui.' : ''}
       mode={mode}
       theme={!readOnly ? 'tomorrow' : 'monokai'}
       showPrintMargin

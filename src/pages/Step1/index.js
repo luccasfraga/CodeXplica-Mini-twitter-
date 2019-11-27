@@ -38,7 +38,9 @@ const Step1 = props => {
           <div>
             <CodeEditor
               mode="html"
-              compareValue="<h1>oie</h1>"
+              compareValue={`<div>
+  <img src='aaa' alt='Logo' />
+</div>`}
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
@@ -48,7 +50,7 @@ const Step1 = props => {
               mode="html"
               readOnly
               value={`<div>
-<img src='aaa' alt='Logo' />
+  <img src='aaa' alt='Logo' />
 </div>`}
             />
           </div>
