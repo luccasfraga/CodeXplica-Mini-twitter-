@@ -4,5 +4,6 @@
   "step03": "<p>Agora é hora de criarmos a área onde vamos digitar nossos tweets. Para isso vamos usar um elemento do HTML chamado TextArea com a propriedade <b e alt>placeholder</b, onde <b>src</b> é utilizada para deixar uma dica para o usuário saber o que digitar naquele campo.</p>",
   "step04": "<p>Que tal agora criarmos o botão que envia o tweet? Vamos entrar agora em uma Linguagem de Programação chamada Javascript. O Javascript nos deixa criar mecanismos dinâmicos em nossas páginas, assim podemos interagir com os componentes HTML que criamos anterioirmente. Agora vamos fazer nosso tweet ficar armazenado na nuvem!</p>",
   "step05": "<p>Lembra do CSS? Vamos usar ele novamente para deixar a lista dos tweets mais bonita.</p>",
-  "step06": "<p>Olha que legal, você acabou de construir seu próprio tweeter. Você passou por vários passos, tudo que você construiu usando HTML e CSS chamamos de camada de aplicação e o que foi criado com o JavaScript chamamos de camada de controle. Agora você sabe que uma aplicação pode ser construída utilizando diferentes linguagens de programação e é dividida em diferentes camadas</p>"
+  "step06": "<p>??</p>",
+  "step07": "<p>Olha que legal, você acabou de construir seu próprio tweeter. Você passou por vários passos, tudo que você construiu usando HTML e CSS chamamos de camada de aplicação e o que foi criado com o JavaScript chamamos de camada de controle. Agora você sabe que uma aplicação pode ser construída utilizando diferentes linguagens de programação e é dividida em diferentes camadas</p>"
 }
