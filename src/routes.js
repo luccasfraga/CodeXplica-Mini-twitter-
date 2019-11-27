@@ -20,9 +20,8 @@ export default function Routes() {
         <Route path="/step03" component={Step3} />
         <Route path="/step04" component={Step4} />
         <Route path="/step05" component={Step5} />
-        {/* <Route path="/step06" component={Step6} /> */}
-        <Route path="*" component={NotFound} />
         <Route path="/step06" component={Step6} />
+        <Route path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>
   );
