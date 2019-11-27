@@ -34,13 +34,23 @@ const Step5 = props => {
           <div>
             <CodeEditor
               mode="html"
-              compareValue="<h1>oie</h1>"
+              compareValue="<div>
+<b>@nomedapessoa</b>
+<p>Texto</p>
+</div>"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
+            <CodeEditor
+              mode="html"
+              readOnly
+              value="<div>
+<b>@nomedapessoa</b>
+<p>Texto</p>
+</div>"
+            />
           </div>
 
           <Subtitle

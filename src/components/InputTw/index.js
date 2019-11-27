@@ -4,7 +4,7 @@ import { BoxInputTw } from './styles';
 import ImgUser from '../../images/icon_user.png';
 import PostTw from '../PostTw';
 
-const InputTw = () => {
+const InputTw = ({ noFake }) => {
   const [inputValue, setInputValue] = useState('');
 
   function handleClick() {
@@ -43,7 +43,7 @@ const InputTw = () => {
           </button>
         </div>
       </BoxInputTw>
-      <PostTw />
+      <PostTw noFake />
     </>
   );
 };

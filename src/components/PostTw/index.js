@@ -2,20 +2,23 @@ import React from 'react';
 
 import { PostTw, Content } from './styles';
 
-const InputTw = ({ fake }) => (
+const InputTw = ({ noFake }) => (
   <Content>
-    {!fake && localStorage.getItem('tw') ? (
-      JSON.parse(localStorage.getItem('tw')).map(item => (
-        <PostTw key={item}>
-          <b>@nomedapessoa</b>
-          <p>{item}</p>
-        </PostTw>
-      ))
-    ) : (
+    {!noFake ? (
       <PostTw>
         <b>@nomedapessoa</b>
-        <p>teste</p>
+        <p>texto</p>
       </PostTw>
+    ) : (
+      <div>
+        {localStorage.getItem('tw') &&
+          JSON.parse(localStorage.getItem('tw')).map(item => (
+            <PostTw key={item}>
+              <b>@nomedapessoa</b>
+              <p>{item}</p>
+            </PostTw>
+          ))}
+      </div>
     )}
   </Content>
 );

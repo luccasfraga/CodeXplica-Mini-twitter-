@@ -33,14 +33,58 @@ const Step4 = props => {
           />
           <div>
             <CodeEditor
-              mode="html"
-              compareValue="<h1>oie</h1>"
+              mode="css"
+              compareValue="div {
+width: 100%;
+display:flex;
+}
+
+img {
+width: 45px;
+border-radius: 50%;
+}
+
+textarea {
+border: 0;
+font-size: 18px;
+margin-left: 20px;
+}
+
+button {
+border-radius: 50px;
+background: blue;
+padding: 30px;
+}"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
+            <CodeEditor
+              mode="css"
+              readOnly
+              value="div {
+width: 100%;
+display:flex;
+}
+
+img {
+width: 45px;
+border-radius: 50%;
+}
+
+textarea {
+border: 0;
+font-size: 18px;
+margin-left: 20px;
+}
+
+button {
+border-radius: 50px;
+background: blue;
+padding: 30px;
+}"
+            />
           </div>
 
           <Subtitle
@@ -50,7 +94,7 @@ const Step4 = props => {
           />
 
           <Result>
-            <BoxInputTw />
+            <BoxInputTw noFake />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />

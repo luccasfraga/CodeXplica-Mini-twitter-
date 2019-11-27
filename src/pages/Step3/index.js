@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import { Container, Content, Result, TextAreaTwitter } from './styles';
+import { Container, Content, Result } from './styles';
+import ImgUser from '../../images/icon_user.png';
 
 import Button from '../../components/button';
 import CardInfo from '../../components/cardInfo';
@@ -9,7 +10,6 @@ import CodeEditor from '../../components/codeEditor';
 import Header from '../../components/header';
 import Subtitle from '../../components/subtitle';
 import Message from '../../text-steps.json';
-import imageTwitter from '../../images/twitter.png';
 
 const Step3 = props => {
   const [disabled, setDisabled] = useState(true);
@@ -34,9 +34,15 @@ const Step3 = props => {
           <div>
             <CodeEditor
               mode="html"
-              compareValue="<textarea
+              compareValue="<div>
+<img src='profile.jpg' />
+<textarea
 placeholder='Twitte algo aqui!'>
-</textarea>"
+</textarea>
+<button placeholder='O que está acontecendo?'>
+Tweetar
+</button>
+</div>"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
@@ -45,9 +51,15 @@ placeholder='Twitte algo aqui!'>
             <CodeEditor
               mode="html"
               readOnly
-              value="<textarea
+              value="<div>
+<img src='profile.jpg' />
+<textarea
 placeholder='Twitte algo aqui!'>
-</textarea>"
+</textarea>
+<button placeholder='O que está acontecendo?'>
+Tweetar
+</button>
+</div>"
             />
           </div>
 
@@ -58,8 +70,11 @@ placeholder='Twitte algo aqui!'>
           />
 
           <Result>
-            <Subtitle text="Home" margin="8px 20px" align="left;" />
-            <TextAreaTwitter placeholder="Twitte algo aqui!" />
+            <div>
+              <img style={{ width: '50px' }} src={ImgUser} />
+              <textarea placeholder="Twitte algo aqui!" />
+              <button placeholder="O que está acontecendo?">Tweetar</button>
+            </div>
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />

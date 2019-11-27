@@ -23,7 +23,7 @@ const Step6 = props => {
     <>
       <Header {...props} />
       <Container>
-        <CardInfo width="50%" background="#f9f9f9" text={Message.step05} />
+        <CardInfo width="50%" background="#f9f9f9" text={Message.step06} />
 
         <Content>
           <Subtitle
@@ -33,14 +33,36 @@ const Step6 = props => {
           />
           <div>
             <CodeEditor
-              mode="html"
-              compareValue="<h1>oie</h1>"
+              mode="css"
+              compareValue="div {
+width: 100%;
+display:flex;
+flex-direction: column;
+}
+
+b {
+display: block;
+margin-bottom: 20px;
+}"
               handleDisabled={() => setDisabled(false)}
               handleEnabled={() => setDisabled(true)}
               value={editorValue}
               onChange={setEditorValue}
             />
-            <CodeEditor mode="html" readOnly value="<h1>oie</h1>" />
+            <CodeEditor
+              mode="css"
+              readOnly
+              value="div {
+width: 100%;
+display:flex;
+flex-direction: column;
+}
+
+b {
+display: block;
+margin-bottom: 20px;
+}"
+            />
           </div>
 
           <Subtitle
