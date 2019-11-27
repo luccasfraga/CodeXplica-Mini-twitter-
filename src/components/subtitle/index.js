@@ -3,9 +3,13 @@ import React from 'react';
 import { SubtitleStyles } from './styles';
 
 const SubTitle = ({ color, margin, text, size, align }) => (
-  <SubtitleStyles color={color} margin={margin} size={size} align={align}>
-    {text}
-  </SubtitleStyles>
+  <SubtitleStyles
+    color={color}
+    margin={margin}
+    size={size}
+    align={align}
+    dangerouslySetInnerHTML={{ __html: text }}
+  />
 );
 
 SubTitle.propTypes = {
@@ -17,9 +21,9 @@ SubTitle.propTypes = {
 };
 
 SubTitle.defaultProps = {
-  color: '#616161',
+  color: '#fff',
   margin: '0',
-  size: '24px',
+  size: '16px',
   align: 'center',
 };
 

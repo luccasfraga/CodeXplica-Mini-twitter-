@@ -7,4 +7,8 @@ export const TitleStyles = styled.h1`
   font-weight: bold;
   text-align: center;
   display: block;
+
+  span {
+    color: #ff7d0d;
+  }
 `;

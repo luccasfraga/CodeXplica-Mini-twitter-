@@ -18,7 +18,7 @@ const Home = props => {
       <Header {...props} />
       <Content>
         <div>
-          <Title text="Você já pensou em programar?" />
+          <Title text="Você já pensou em <span>começar<br /> a programar?</span>" />
           <SubTitle text="Crie seu próprio Twitter e veja que você também pode desenvolver uma aplicação" />
         </div>
         <Button

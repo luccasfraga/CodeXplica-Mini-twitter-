@@ -9,7 +9,9 @@ const Navbar = props => {
 
   return (
     <Header>
-      <Text onClick={handleClick}>VC CODA</Text>
+      <Text onClick={handleClick}>
+        <span>{'<'}</span>CodeXplica<span>{'/>'}</span>
+      </Text>
     </Header>
   );
 };

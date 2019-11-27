@@ -3,39 +3,7 @@ import styled from 'styled-components';
 export const BoxButton = styled.button`
   display: flex;
   margin: ${props => props.margin};
-  background: rgba(63, 191, 191, 1);
-  background: -moz-linear-gradient(
-    left,
-    rgba(63, 191, 191, 1) 0%,
-    rgba(63, 190, 225, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right top,
-    color-stop(0%, rgba(63, 191, 191, 1)),
-    color-stop(100%, rgba(63, 190, 225, 1))
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(63, 191, 191, 1) 0%,
-    rgba(63, 190, 225, 1) 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(63, 191, 191, 1) 0%,
-    rgba(63, 190, 225, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    left,
-    rgba(63, 191, 191, 1) 0%,
-    rgba(63, 190, 225, 1) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(63, 191, 191, 1) 0%,
-    rgba(63, 190, 225, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fbfbf', endColorstr='#3fbee1', GradientType=1 );
+  background: #ff7d0d;
   border: ${props => props.border};
   border-radius: ${props => props.borderRadius};
   padding: ${props => props.padding};
@@ -65,39 +33,6 @@ export const BoxButton = styled.button`
   &:hover::after {
     transition: transform 0.6s ease-in-out;
     transform: translate3d(1500%, 0, 0) rotate(35deg);
-    background: rgba(163, 240, 240, 1);
-    background: -moz-linear-gradient(
-      left,
-      rgba(163, 240, 240, 1) 0%,
-      rgba(44, 242, 232, 1) 100%
-    );
-    background: -webkit-gradient(
-      left top,
-      right top,
-      color-stop(0%, rgba(163, 240, 240, 1)),
-      color-stop(100%, rgba(44, 242, 232, 1))
-    );
-    background: -webkit-linear-gradient(
-      left,
-      rgba(163, 240, 240, 1) 0%,
-      rgba(44, 242, 232, 1) 100%
-    );
-    background: -o-linear-gradient(
-      left,
-      rgba(163, 240, 240, 1) 0%,
-      rgba(44, 242, 232, 1) 100%
-    );
-    background: -ms-linear-gradient(
-      left,
-      rgba(163, 240, 240, 1) 0%,
-      rgba(44, 242, 232, 1) 100%
-    );
-    background: linear-gradient(
-      to right,
-      rgba(163, 240, 240, 1) 0%,
-      rgba(44, 242, 232, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3f0f0', endColorstr='#2cf2e8', GradientType=1 );
   }
 
   &:disabled,
