@@ -7,6 +7,7 @@ import Step2 from './pages/Step2';
 import Step3 from './pages/Step3';
 import Step4 from './pages/Step4';
 import Step5 from './pages/Step5';
+import NotFound from './pages/NotFound';
 import Step6 from './pages/Step6';
 
 export default function Routes() {
@@ -19,8 +20,9 @@ export default function Routes() {
         <Route path="/step03" component={Step3} />
         <Route path="/step04" component={Step4} />
         <Route path="/step05" component={Step5} />
+        {/* <Route path="/step06" component={Step6} /> */}
+        <Route path="*" component={NotFound} />
         <Route path="/step06" component={Step6} />
-        <Route path="*" component={() => <h1>404</h1>} />
       </Switch>
     </BrowserRouter>
   );
