@@ -7,6 +7,9 @@ Participantes: @flpgst (Felipe Gonçalves), @patrickgmailhub (Patrick Guedes), @
 ![](src/images/projeto.png)
 
 
+### Url do projeto
+[http://localhost:3000](http://codexplica.surge.sh/)
+
 
 ## Available Scripts
 
