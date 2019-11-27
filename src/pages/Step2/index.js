@@ -34,8 +34,9 @@ const Step2 = props => {
           <div>
             <CodeEditor
               mode="css"
-              compareValue="div { width: 100%;
-                box-shadow: 0px 1px 3px 0px #c1c1c1;
+              compareValue="div {
+                width: 100%;
+                border: grey
                 padding: 30px;
                 };"
               handleDisabled={() => setDisabled(false)}
@@ -46,8 +47,9 @@ const Step2 = props => {
             <CodeEditor
               mode="css"
               readOnly
-              value={` div { width: 100%;
-box-shadow: 0px 1px 3px 0px #c1c1c1;
+              value={` div {
+width: 100%;
+border: grey
 padding: 30px;
 };`}
             />
@@ -60,7 +62,7 @@ padding: 30px;
           />
 
           <Result>
-<HeaderTw />
+            <HeaderTw />
           </Result>
 
           <Button onClick={handleClick} text="Avançar <3" disabled={disabled} />
